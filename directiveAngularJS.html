@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular Demo</title>
+  <script type="text/javascript" src ="js/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+  <div class="my-hyo-min" ></div>
+
+
+  <script type="text/javascript">
+    // Khai bao 1 module app
+    var app = angular.module("myApp",[]);
+    app.directive("myHyoMin", function() {
+      return {
+        restrict: "C",
+        template: "<h1>Xin chao Pham Minh Huong!</h1>"
+      };
+    });
+  </script>
+</body>
+</html>

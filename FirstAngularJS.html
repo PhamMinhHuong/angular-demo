@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular Demo</title>
+  <script type="text/javascript" src ="js/angular.min.js"></script>
+</head>
+<body>
+  <h1> Sample Application</h1>
+  <div ng-app = "" ng-init = "personal =[{name:'Hyo', city:'Nam Dinh'}, {name:'Min', city:'Hai Hau'}, {name:'Hyo-Min', city:'Hai Chau'}]">
+    <p>Enter your name: <input type="text" ng-model = "name" /></p>
+    <p>Hello{{name}}!</p>
+    <p>List of Countries with locale:</p>
+    <ol>
+      <li ng-repeat = "info in personal">
+        {{'Name: ' + info.name + ', City: ' + info.city}}
+      </li>
+    </ol>
+  </div>
+</body>
+</html>

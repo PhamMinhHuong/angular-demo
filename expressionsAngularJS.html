@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular Demo</title>
+  <script type="text/javascript" src ="js/angular.min.js"></script>
+</head>
+<body>
+  <h1>Sample Application</h1>
+
+  
+
+  <div ng-app = "" ng-init = "quantity = 5; cost = 9; student = {firstname:'J-', lastname:'Hyo', id:159}; marks = [18,19,59,89,91]">
+    <p>Hello <span ng-bind = "student.firstname + ' ' + student.lastname"></span>!</p>
+    <p> <span ng-bind = "cost * quantity"></span>$</p>
+    <p>ID: <span ng-bind = "student.id"></span></p>
+    <p>Marks(match) <span ng-bind = "marks[3]"></span></p>
+  </div>
+</body>
+</html>
